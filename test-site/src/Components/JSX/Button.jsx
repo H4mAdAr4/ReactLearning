@@ -1,6 +1,11 @@
-const Button = ({children, action}) => {
+const Button = ({children, onClick}) => {
+    /*
+    ! For debugging purposes only!
+    * console.log(children)
+    * console.log(onClick)
+    */
     return (
-        <button className="add-button" onClick={action}>
+        <button className="button" onClick={onClick}>
             {children}
         </button>
     );
